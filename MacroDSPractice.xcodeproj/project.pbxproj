@@ -17,6 +17,13 @@
 		BF62C5C727202C7A009A7872 /* MacroDSPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62C5C627202C7A009A7872 /* MacroDSPracticeTests.swift */; };
 		BF62C5D127202C7A009A7872 /* MacroDSPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62C5D027202C7A009A7872 /* MacroDSPracticeUITests.swift */; };
 		BF62C5D327202C7A009A7872 /* MacroDSPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62C5D227202C7A009A7872 /* MacroDSPracticeUITestsLaunchTests.swift */; };
+		BFF31F89273E96D000933BDE /* CaseOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF31F88273E96D000933BDE /* CaseOneViewController.swift */; };
+		BFF31F8B273E96DD00933BDE /* CaseTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF31F8A273E96DD00933BDE /* CaseTwoViewController.swift */; };
+		BFF31F8D273E96E900933BDE /* CaseThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF31F8C273E96E900933BDE /* CaseThreeViewController.swift */; };
+		BFF31F90273E979E00933BDE /* OrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF31F8F273E979E00933BDE /* OrderView.xib */; };
+		BFF31F92273E9A0700933BDE /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF31F91273E9A0700933BDE /* OrderView.swift */; };
+		BFF31F94273E9D1400933BDE /* ChangeStatusCaseOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF31F93273E9D1400933BDE /* ChangeStatusCaseOneViewController.swift */; };
+		BFF31F96273E9E7800933BDE /* ChangeStatusCaseTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF31F95273E9E7800933BDE /* ChangeStatusCaseTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		BF62C5CC27202C7A009A7872 /* MacroDSPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacroDSPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF62C5D027202C7A009A7872 /* MacroDSPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroDSPracticeUITests.swift; sourceTree = "<group>"; };
 		BF62C5D227202C7A009A7872 /* MacroDSPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroDSPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFF31F88273E96D000933BDE /* CaseOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseOneViewController.swift; sourceTree = "<group>"; };
+		BFF31F8A273E96DD00933BDE /* CaseTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTwoViewController.swift; sourceTree = "<group>"; };
+		BFF31F8C273E96E900933BDE /* CaseThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseThreeViewController.swift; sourceTree = "<group>"; };
+		BFF31F8F273E979E00933BDE /* OrderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderView.xib; sourceTree = "<group>"; };
+		BFF31F91273E9A0700933BDE /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		BFF31F93273E9D1400933BDE /* ChangeStatusCaseOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeStatusCaseOneViewController.swift; sourceTree = "<group>"; };
+		BFF31F95273E9E7800933BDE /* ChangeStatusCaseTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeStatusCaseTwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +117,6 @@
 			children = (
 				BF62C5E027202CC6009A7872 /* Presentation */,
 				BF62C5DF27202CB9009A7872 /* Application */,
-				BF62C5B227202C79009A7872 /* Main.storyboard */,
 				BF62C5B827202C7A009A7872 /* Assets.xcassets */,
 				BF62C5BA27202C7A009A7872 /* LaunchScreen.storyboard */,
 				BF62C5BD27202C7A009A7872 /* Info.plist */,
@@ -141,9 +154,25 @@
 		BF62C5E027202CC6009A7872 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				BFF31F8E273E978D00933BDE /* XIB */,
+				BF62C5B227202C79009A7872 /* Main.storyboard */,
+				BFF31F95273E9E7800933BDE /* ChangeStatusCaseTwoViewController.swift */,
+				BFF31F93273E9D1400933BDE /* ChangeStatusCaseOneViewController.swift */,
 				BF62C5B027202C79009A7872 /* ViewController.swift */,
+				BFF31F88273E96D000933BDE /* CaseOneViewController.swift */,
+				BFF31F8A273E96DD00933BDE /* CaseTwoViewController.swift */,
+				BFF31F8C273E96E900933BDE /* CaseThreeViewController.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BFF31F8E273E978D00933BDE /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				BFF31F8F273E979E00933BDE /* OrderView.xib */,
+				BFF31F91273E9A0700933BDE /* OrderView.swift */,
+			);
+			path = XIB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF62C5BC27202C7A009A7872 /* LaunchScreen.storyboard in Resources */,
+				BFF31F90273E979E00933BDE /* OrderView.xib in Resources */,
 				BF62C5B927202C7A009A7872 /* Assets.xcassets in Resources */,
 				BF62C5B427202C79009A7872 /* Main.storyboard in Resources */,
 			);
@@ -277,10 +307,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF31F94273E9D1400933BDE /* ChangeStatusCaseOneViewController.swift in Sources */,
+				BFF31F8D273E96E900933BDE /* CaseThreeViewController.swift in Sources */,
+				BFF31F92273E9A0700933BDE /* OrderView.swift in Sources */,
 				BF62C5B727202C79009A7872 /* MacroDSPractice.xcdatamodeld in Sources */,
+				BFF31F8B273E96DD00933BDE /* CaseTwoViewController.swift in Sources */,
 				BF62C5B127202C79009A7872 /* ViewController.swift in Sources */,
 				BF62C5AD27202C79009A7872 /* AppDelegate.swift in Sources */,
 				BF62C5AF27202C79009A7872 /* SceneDelegate.swift in Sources */,
+				BFF31F89273E96D000933BDE /* CaseOneViewController.swift in Sources */,
+				BFF31F96273E9E7800933BDE /* ChangeStatusCaseTwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
