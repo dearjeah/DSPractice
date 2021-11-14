@@ -117,17 +117,39 @@
                     <view key="view" contentMode="scaleToFill" id="lLv-fj-QcG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdD-wO-AfI" customClass="OrderView" customModule="MacroDSPractice" customModuleProvider="target">
+                                <rect key="frame" x="37.666666666666657" y="88" width="300" height="324.66666666666669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAG-xH-838" customClass="OrderView" customModule="MacroDSPractice" customModuleProvider="target">
+                                <rect key="frame" x="37.666666666666657" y="422.66666666666674" width="300" height="325"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Jug-On-36J"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fdD-wO-AfI" firstAttribute="width" secondItem="lLv-fj-QcG" secondAttribute="width" multiplier="0.8" id="4AT-B9-652"/>
+                            <constraint firstItem="PAG-xH-838" firstAttribute="centerX" secondItem="fdD-wO-AfI" secondAttribute="centerX" id="QoB-In-wyW"/>
+                            <constraint firstItem="fdD-wO-AfI" firstAttribute="centerX" secondItem="Jug-On-36J" secondAttribute="centerX" id="T0X-He-Cm0"/>
+                            <constraint firstItem="fdD-wO-AfI" firstAttribute="top" secondItem="Jug-On-36J" secondAttribute="top" id="WTg-Zf-YPh"/>
+                            <constraint firstItem="PAG-xH-838" firstAttribute="top" secondItem="fdD-wO-AfI" secondAttribute="bottom" constant="10" id="ZaQ-07-g7h"/>
+                            <constraint firstItem="PAG-xH-838" firstAttribute="height" secondItem="fdD-wO-AfI" secondAttribute="height" id="kE0-yn-I0Z"/>
+                            <constraint firstItem="PAG-xH-838" firstAttribute="width" secondItem="fdD-wO-AfI" secondAttribute="width" id="tII-Vo-ECR"/>
+                            <constraint firstItem="fdD-wO-AfI" firstAttribute="height" secondItem="lLv-fj-QcG" secondAttribute="height" multiplier="0.4" id="vnN-TY-bMa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Case 2" id="lq6-b2-16o"/>
                     <connections>
-                        <segue destination="yF8-dU-Tm5" kind="show" id="P1S-Ou-Myc"/>
+                        <outlet property="OrderCardTwo" destination="PAG-xH-838" id="fux-2u-N76"/>
+                        <outlet property="orderCardOne" destination="fdD-wO-AfI" id="rMm-jj-oZc"/>
+                        <segue destination="yF8-dU-Tm5" kind="show" identifier="goChangeStatus" id="P1S-Ou-Myc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7C-Ql-pFo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093" y="388"/>
+            <point key="canvasLocation" x="1092" y="387.93103448275866"/>
         </scene>
         <!--Change Status Case Two View Controller-->
         <scene sceneID="2wf-Jj-PcX">
@@ -171,6 +193,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Change Status"/>
                                 <connections>
+                                    <action selector="buttonTapped:" destination="yF8-dU-Tm5" eventType="touchUpInside" id="kI9-f8-iXy"/>
                                     <action selector="changeStatus:" destination="I1V-d4-OUm" eventType="touchUpInside" id="FCR-ss-Jza"/>
                                 </connections>
                             </button>

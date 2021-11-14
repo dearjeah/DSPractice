@@ -8,9 +8,19 @@
 import UIKit
 
 class CaseOneViewController: UIViewController {
+    func cobamakan() {
+        print("gw udah makan yaa")
+    }
+    
+    func cobaTidur() {
+        print("gw udah tidur yaa")
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
 
         // Do any additional setup after loading the view.
     }

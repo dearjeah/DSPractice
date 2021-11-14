@@ -156,8 +156,8 @@
 			children = (
 				BFF31F8E273E978D00933BDE /* XIB */,
 				BF62C5B227202C79009A7872 /* Main.storyboard */,
-				BFF31F95273E9E7800933BDE /* ChangeStatusCaseTwoViewController.swift */,
 				BFF31F93273E9D1400933BDE /* ChangeStatusCaseOneViewController.swift */,
+				BFF31F95273E9E7800933BDE /* ChangeStatusCaseTwoViewController.swift */,
 				BF62C5B027202C79009A7872 /* ViewController.swift */,
 				BFF31F88273E96D000933BDE /* CaseOneViewController.swift */,
 				BFF31F8A273E96DD00933BDE /* CaseTwoViewController.swift */,

@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+protocol ButtonChangeStatus: AnyObject {
+    func didButtonTapped(status: String, from: String)
+}
+
 class OrderView: UIView {
     
     @IBOutlet weak var bgColor: UIView!
@@ -15,11 +19,15 @@ class OrderView: UIView {
     @IBOutlet weak var orderName: UILabel!
     @IBOutlet weak var orderStatus: UILabel!
     
+    weak var delegate: ButtonChangeStatus?
+    
     @IBAction func buttonTapped(_ sender: UIButton) {
-        
+        delegate?.didButtonTapped(status: orderStatus.text ?? "", from: orderTitle.text ?? "")
     }
     
-    
+    func setup(dlgt: ButtonChangeStatus) {
+        self.delegate = dlgt
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
